@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+//import {Route,Switch,Redirect} from 'react';
 import firebase from 'firebase';
 
 class App extends Component {
@@ -24,11 +25,14 @@ class App extends Component {
 
   render() {
     return (
+
+    <main>
       <div className="App">
-        <h1>{this.state.speed}</h1>
+       <h1>{this.state.speed}</h1>
       </div>
-    ); 
-  }
+</main>
+    )
+}
 }
 
 export default App;
